@@ -1,0 +1,7 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #00ffff;
+  min-height: 100vh;
+  padding: 0 24px;
+}

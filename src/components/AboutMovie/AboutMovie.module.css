@@ -1,0 +1,9 @@
+.link {
+  display: flex;
+  flex-direction: column;
+  color: #242424;
+  border-top: 2px solid #ffff00;
+  border-bottom: 2px solid #ffff00;
+  padding: 16px;
+  gap: 12px;
+}

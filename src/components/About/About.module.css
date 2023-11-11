@@ -1,0 +1,24 @@
+.about {
+  display: flex;
+  gap: 24px
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.linkBack {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #ffff00;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 12px 0;
+}

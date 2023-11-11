@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLink {
+  color: #242424;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.navLink.active {
+  color: #ffff00;
+  transform: scale(1.1);
+}
