@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import css from './Nav.module.css';
+
 function isActive({ isActive }) {
   return isActive ? `${css.navLink} ${css.active}` : `${css.navLink}`;
 }
