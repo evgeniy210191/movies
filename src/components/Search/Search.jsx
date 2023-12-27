@@ -74,7 +74,7 @@ function Search() {
           serchedData.map(({ name, id, title }) => {
             return (
               <Link to={`${id}`} key={id} className={css.link} state={location}>
-                {title ?? name}
+                ☆ {title ?? name}
               </Link>
             );
           })

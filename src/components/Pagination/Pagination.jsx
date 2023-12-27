@@ -1,6 +1,7 @@
 import Pagination from 'react-js-pagination';
 import css from './Pagination.module.css';
-
+const view = window.innerWidth;
+const amountPage = view >= 500 ? 3 : 1;
 function PaginationList({ handlePageChange, activePage }) {
   return (
     <div>
@@ -8,7 +9,7 @@ function PaginationList({ handlePageChange, activePage }) {
         activePage={activePage}
         itemsCountPerPage={1}
         totalItemsCount={499}
-        pageRangeDisplayed={5}
+        pageRangeDisplayed={amountPage}
         onChange={handlePageChange}
         prevPageText={'prev'}
         nextPageText={'next'}
@@ -17,6 +18,8 @@ function PaginationList({ handlePageChange, activePage }) {
         itemClassPrev={css.changeState}
         itemClassNext={css.changeState}
         linkClass={css.page}
+        itemClassLast={css.hidden}
+        itemClassFirst={css.hidden}
       />
     </div>
   );

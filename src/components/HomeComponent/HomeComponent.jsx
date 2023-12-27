@@ -38,7 +38,7 @@ function HomeComponent() {
         {data.map(({ name, id, title }) => {
           return (
             <Link to={`movies/${id}`} key={id} className={css.link}>
-              {title ?? name}
+              ☆ {title ?? name}
             </Link>
           );
         })}
